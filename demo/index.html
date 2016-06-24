@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>flashMe</title>
+    <title>easyFolder</title>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -12,228 +12,238 @@
     <script src="js/flashMe.js"></script>
 </head>
 <body>
-    <style>
-    .element {
-        width: 100%;
-        height: 100px;
-        border-radius: 50px;
-        margin-bottom: 10px;
-    }
-</style>
 <div class="container">
-    <h1>flashMe</h1>
-    <p><i>Another pointless plugin.</i></p>
-    <p id="demo">Make me flash all kinds of colors.</p>
-    <h2>Usage</h2>
+    <div class="row">
+        <h1 style="color: red;">WARNING: CONTAINS FLASHING IMAGES!</h1>
+        <h1>flashMe</h1>
+        <p><i>Another pointless plugin.</i></p>
+        <p id="demo">Make me flash all kinds of colors.</p>
+        <h2>Usage</h2>
 
-    <!-- Example 1 -->
-    <div>
-        <p class="help-block">Standard usage with default settings</p>
-        Code
-        <div class="well">
-            $('#example1').flashMe();
+        <!-- Example 1 -->
+        <div>
+            <p class="help-block">Standard usage with default settings</p>
+            Code
+            <div class="well">
+                $('#example1').flashMe();
+            </div>
+            Preview
+            <div class="well">
+                <div id="example1" class="example-block">Example 1</div>
+            </div>
         </div>
-        Preview
-        <div class="well">
-            <div id="example1" class="example-block">Example 1</div>
-        </div>
-    </div>
 
-    <!-- Example 2 -->
-    <div>
-        <p class="help-block">Apply transition</p>
-        Code
-        <div class="well">
-            <code>
-                $('#example2').flashMe({
-                transition: 500
-                });
-            </code>
+        <!-- Example 2 -->
+        <div>
+            <p class="help-block">Apply transition</p>
+            Code
+            <div class="well">
+                <code>
+                    $('#example2').flashMe({
+                    transition: 500
+                    });
+                </code>
+            </div>
+            Preview
+            <div class="well">
+                <div id="example2" class="example-block">Example 2</div>
+            </div>
         </div>
-        Preview
-        <div class="well">
-            <div id="example2" class="example-block">Example 2</div>
-        </div>
-    </div>
 
-    <!-- Example 3 -->
-    <div>
-        <p class="help-block">Flash the background too!?</p>
-        Code
-        <div class="well">
-            <code>
-                $('#example3').flashMe({
-                backgroundColors: "surprise"
-                });
-            </code>
+        <!-- Example 3 -->
+        <div>
+            <p class="help-block">Flash the background too!?</p>
+            Code
+            <div class="well">
+                <code>
+                    $('#example3').flashMe({
+                    backgroundColors: "surprise"
+                    });
+                </code>
+            </div>
+            Preview
+            <div class="well">
+                <div id="example3" class="example-block">Example 3</div>
+            </div>
         </div>
-        Preview
-        <div class="well">
-            <div id="example3" class="example-block">Example 3</div>
-        </div>
-    </div>
 
-    <!-- Example 4 -->
-    <div>
-        <p class="help-block">Specify the interval</p>
-        Code
-        <div class="well">
-            <code>
-                $('#example4').flashMe({
-                interval: 100
-                });
-            </code>
+        <!-- Example 4 -->
+        <div>
+            <p class="help-block">Specify the interval</p>
+            Code
+            <div class="well">
+                <code>
+                    $('#example4').flashMe({
+                    interval: 100
+                    });
+                </code>
+            </div>
+            Preview
+            <div class="well">
+                <div id="example4" class="example-block">Example 4</div>
+            </div>
         </div>
-        Preview
-        <div class="well">
-            <div id="example4" class="example-block">Example 4</div>
-        </div>
-    </div>
 
-    <!-- Example 5 -->
-    <div>
-        <p class="help-block">Specify the colors to flash with. (same applies to backgroundColors)</p>
-        Code
-        <div class="well">
-            <code>
-                $('#example4').flashMe({
-                colors: ["#43fa4e", "#2afdec", "#4ecdae"]
-                });
-            </code>
-        </div>
-        Preview
-        <div class="well">
-            <div id="example5" class="example-block">Example 5</div>
+        <!-- Example 5 -->
+        <div>
+            <p class="help-block">Specify the colors to flash with. (same applies to backgroundColors)</p>
+            Code
+            <div class="well">
+                <code>
+                    $('#example4').flashMe({
+                    colors: ["#43fa4e", "#2afdec", "#4ecdae"]
+                    });
+                </code>
+            </div>
+            Preview
+            <div class="well">
+                <div id="example5" class="example-block">Example 5</div>
+            </div>
         </div>
     </div>
 
     <!-- Example 6 -->
-    <div>
-        <p class="help-block">Or create something truly awesome...Maybe this isn't so pointless afterall?</p>
-            <div id="backgroundFlash" style="width: 900px; height: 680px;" class="example-block">
+    <style>
+        #backgroundFlash {
+            border-radius: 500px;
+        }
+        .element {
+            width: 100%;
+            height: 200px;
+            border-radius: 500px;
+            margin-bottom: 20px;
+        }
+    </style>
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash1">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash2">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash1">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash4">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash3">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash1">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash2">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash1">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash3">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash3">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash2">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash3">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash2">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash1">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash4">
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="element flash3">
-            </div>
-        </div>
-    </div>
+        <div style="width: 100%; height: 500px;">
+            <p class="help-block">Create something truly awesome</p>
+            <div id="backgroundFlash">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash4">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash3">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash3">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash3">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash3">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash4">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="element flash3">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <h1>Options</h1>
-    <table class="table">
-        <tr>
-            <th>Option</th>
-            <th>Default</th>
-            <th>Values</th>
-        </tr>
-        <tr>
-            <td>
-                colors
-            </td>
-            <td>
-                "surprise"
-            </td>
-            <td>
-                false (don't flash the color attribute)<br>array of colors (["#43fa4e", "#2afdec", "#4ecdae"])
-            </td>
-        </tr>
-        <tr>
-            <td>
-                backgroundColors
-            </td>
-            <td>
-                "surprise"
-            </td>
-            <td>
-                false (don't flash the background-color attribute)<br>array of colors (["#43fa4e", "#2afdec",
-                "#4ecdae"])
-            </td>
-        </tr>
-        <tr>
-            <td>
-                interval
-            </td>
-            <td>
-                1000
-            </td>
-            <td>
-                interval between flashes in milliseconds
-            </td>
-        </tr>
-        <tr>
-            <td>
-                transition
-            </td>
-            <td>
-                false
-            </td>
-            <td>
-                transition speed in milliseconds
-            </td>
-        </tr>
-    </table>
+    <div class="row">
+        <hr>
+        <h1>Options</h1>
+        <table class="table">
+            <tr>
+                <th>Option</th>
+                <th>Default</th>
+                <th>Values</th>
+            </tr>
+            <tr>
+                <td>
+                    colors
+                </td>
+                <td>
+                    "surprise"
+                </td>
+                <td>
+                    false (don't flash the color attribute)<br>array of colors (["#43fa4e", "#2afdec", "#4ecdae"])
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    backgroundColors
+                </td>
+                <td>
+                    "surprise"
+                </td>
+                <td>
+                    false (don't flash the background-color attribute)<br>array of colors (["#43fa4e", "#2afdec",
+                    "#4ecdae"])
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    interval
+                </td>
+                <td>
+                    1000
+                </td>
+                <td>
+                    interval between flashes in milliseconds
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    transition
+                </td>
+                <td>
+                    false
+                </td>
+                <td>
+                    transition speed in milliseconds
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <hr>
 <script>
@@ -269,7 +279,7 @@
         transition: 500,
         interval: 500
     });
-    
+
     // Something awesome
     $('#backgroundFlash').flashMe({
         colors: false,
