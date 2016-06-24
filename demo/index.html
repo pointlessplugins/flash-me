@@ -12,6 +12,14 @@
     <script src="js/flashMe.js"></script>
 </head>
 <body>
+    <style>
+    .element {
+        width: 100%;
+        height: 100px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+</style>
 <div class="container">
     <h1>flashMe</h1>
     <p><i>Another pointless plugin.</i></p>
@@ -101,21 +109,77 @@
 
     <!-- Example 6 -->
     <div>
-        <p class="help-block">Create something truly awesome</p>
-        Code
-        <div class="well">
-            <code>
-                $('#example6').flashMe({
-                colors: "surprise",
-                backgroundColors: "surprise",
-                transition: 1500,
-                interval: 1500
-                });
-            </code>
+        <p class="help-block">Or create something truly awesome...Maybe this isn't so pointless afterall?</p>
+            <div id="backgroundFlash" style="width: 900px; height: 680px;" class="example-block">
+                <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash1">
+            </div>
         </div>
-        Preview
-        <div class="well">
-            <div id="example6" class="example-block">Example 6</div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash2">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash1">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash4">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash3">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash1">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash2">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash1">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash3">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash3">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash2">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash3">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash2">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash1">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash4">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="element flash3">
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
         </div>
     </div>
 
@@ -206,6 +270,34 @@
         backgroundColors: "surprise",
         transition: 500,
         interval: 500
+    });
+    
+    // Something awesome
+    $('#backgroundFlash').flashMe({
+        colors: false,
+        backgroundColors: "surprise",
+        interval: 2000,
+        transition: 200,
+    });
+    $('.flash1').flashMe({
+        backgroundColors: "surprise",
+        interval: 200,
+        transition: 200,
+    });
+    $('.flash2').flashMe({
+        backgroundColors: "surprise",
+        interval: 1000,
+        transition: 500,
+    });
+    $('.flash3').flashMe({
+        backgroundColors: "surprise",
+        interval: 500,
+        transition: 600,
+    });
+    $('.flash4').flashMe({
+        backgroundColors: "surprise",
+        interval: 800,
+        transition: 800,
     });
 </script>
 </body>
