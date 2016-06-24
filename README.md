@@ -1,3 +1,4 @@
+# CAUTION: DOES CONTAIN FAST FLASHING IMAGES!
 # flash-me
 A pointless plugin to flash the background-color and color attributes of an element. repeatedly.
 
